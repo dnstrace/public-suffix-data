@@ -38,7 +38,7 @@ If there is a match, the domain is valid. If not, it is invalid. To determine th
 
 ### Last Generator Output
 
-Mon Mar 19 01:50:04 EDT 2018
+Mon Mar 19 13:12:41 EDT 2018
 
 ICANN suffixes found: 7273   Private suffixes found: 1174
 
