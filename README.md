@@ -17,15 +17,15 @@ The provided JSON files are formatted such that the decoded array is approximate
 ```
 Array(
    "com" => [
-      ["amazonaws","s3-eu-west-1","%"],
-      ["amazonaws","s3-eu-west-2","%"],
-      ["amazonaws","s3-eu-west-3","%"], ...
+      [4, "amazonaws","s3-eu-west-1","%"],
+      [4, "amazonaws","s3-eu-west-2","%"],
+      [4, "amazonaws","s3-eu-west-3","%"], ...
       ]
    "net" => [ ... ]
     ...
 ```
 
-The first level of the array contains keys corresponding to TLDs. The second layer of the array contains a suffix-first (inversed) array of values to match, where the % value signals wildcard.
+The first level of the array contains keys corresponding to TLDs. The second layer of the array contains two things: first, an integer at index zero dictating how long the array is (in the place of the TLD since that has already been matched), and second, a suffix-first (inversed) array of values to match, where the % value signals wildcard. Again, excluding the TLD.
 
 In order to decide if a domain is valid (assuming invalid characters have already been checked for):
 
@@ -38,7 +38,7 @@ If there is a match, the domain is valid. If not, it is invalid. To determine th
 
 ### Last Generator Output
 
-Mon Mar 19 13:12:41 EDT 2018
+Mon Mar 19 23:43:23 EDT 2018
 
 ICANN suffixes found: 7273   Private suffixes found: 1174
 
