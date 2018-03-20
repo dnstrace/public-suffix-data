@@ -12,33 +12,26 @@ A parsed subset of the Public Suffix List for ingestion into custom tools.
 
 All domains are punycoded from international formats.
 
-The provided JSON files are formatted such that the decoded array is approximately the following - this excerpt pulled from the private.json datafile:
+The provided JSON files are formatted such that the decoded array is approximately the following - this excerpt pulled from the icann.json datafile:
 
 ```
-Array(
-   "com" => [
-      [4, "amazonaws","s3-eu-west-1","%"],
-      [4, "amazonaws","s3-eu-west-2","%"],
-      [4, "amazonaws","s3-eu-west-3","%"], ...
-      ]
-   "net" => [ ... ]
-    ...
+[ "ac" => [
+       "%"   => [ ]
+       "com" => [
+             "%"   => [ ] ]
+       "edu" => [
+             "%"   => [ ] ]
+        ... ]
+  "ad" => ...
 ```
 
-The first level of the array contains keys corresponding to TLDs. The second layer of the array contains two things: first, an integer at index zero dictating how long the array is (in the place of the TLD since that has already been matched), and second, a suffix-first (inversed) array of values to match, where the % value signals wildcard. Again, excluding the TLD.
+Or in a more comprehensible form: the JSON files provide a multidimensional array structure such that in order to check the validity of a domain, simply work backwards from the TLD. If a given field (say, TLD to start) exists in the keys of the current array, that level is valid. Progress by taking the resultant array from the matched key and moving one level down. Continue until the best remaining match is a wildcard (%). If no real or wildcard match can be made, the domain is invalid.
 
-In order to decide if a domain is valid (assuming invalid characters have already been checked for):
-
-1. Explode along "." into an array
-2. Reverse sort the array so the TLD is in index 0
-3. Match its index-zero value to a TLD
-4. Find the longest matching array of suffixes within that TLD
-
-If there is a match, the domain is valid. If not, it is invalid. To determine the registrable domain with reasonable certainty, take the value in the wildcard spot. This is typically but not always correct.
+To determine the registrable domain with reasonable certainty, take the value in the wildcard spot. This is typically but not always correct.
 
 ### Last Generator Output
 
-Tue Mar 20 01:50:04 EDT 2018
+Tue Mar 20 02:59:33 EDT 2018
 
 ICANN suffixes found: 7273   Private suffixes found: 1174
 
