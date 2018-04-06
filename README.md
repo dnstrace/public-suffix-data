@@ -31,7 +31,7 @@ To determine the registrable domain with reasonable certainty, take the value in
 
 ### Last Generator Output
 
-Thu Apr  5 01:50:05 EDT 2018
+Fri Apr  6 01:50:04 EDT 2018
 
 ICANN suffixes found: 7273   Private suffixes found: 1183
 
