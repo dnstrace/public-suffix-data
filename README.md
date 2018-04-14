@@ -31,11 +31,11 @@ To determine the registrable domain with reasonable certainty, take the value in
 
 ### Last Generator Output
 
-Fri Apr 13 01:50:05 EDT 2018
+Sat Apr 14 01:50:05 EDT 2018
 
-ICANN suffixes found: 7272   Private suffixes found: 1181
+ICANN suffixes found: 7272   Private suffixes found: 1182
 
-Unique ICANN suffixes: 7264   Unique Private suffixes: 1181
+Unique ICANN suffixes: 7264   Unique Private suffixes: 1182
 
 Discrepancy: 8
 
