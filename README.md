@@ -30,18 +30,16 @@ Or in a more comprehensible form: the JSON files provide a multidimensional arra
 To determine the registrable domain with reasonable certainty, take the value in the wildcard spot. This is typically but not always correct.
 
 ### Last Generator Output
-
-Sat May 19 01:50:05 EDT 2018
-
-ICANN suffixes found: 7321   Private suffixes found: 1281
-
-Unique ICANN suffixes: 7313   Unique Private suffixes: 1281
-
+```
+Sun May 20 01:59:01 EDT 2018
+ICANN suffixes found: 7321, unique: 7313
+Private suffixes found: 1281, unique: 1281
 Discrepancy: 8
-
 Obvious punycode errors: 0
 
-Max ICANN suffix depth: 4   Max Private suffix depth: 5
+Max ICANN suffix depth: 4
+Max Private suffix depth: 5
 
-ICANN TLDs: 1555   Private TLDs: 161
-
+ICANN TLDs: 1555
+Private TLDs: 161
+```
