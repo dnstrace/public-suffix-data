@@ -31,8 +31,8 @@ To determine the registrable domain with reasonable certainty, take the value in
 
 ### Last Generator Output
 ```
-Thu Jul 19 01:50:04 EDT 2018
-ICANN suffixes found: 7327, unique: 7319
+Fri Jul 20 01:50:05 EDT 2018
+ICANN suffixes found: 7333, unique: 7325
 Private suffixes found: 1282, unique: 1282
 Discrepancy: 8
 Obvious punycode errors: 0
@@ -40,6 +40,6 @@ Obvious punycode errors: 0
 Max ICANN suffix depth: 4
 Max Private suffix depth: 5
 
-ICANN TLDs: 1553
+ICANN TLDs: 1552
 Private TLDs: 162
 ```
