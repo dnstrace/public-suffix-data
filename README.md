@@ -31,9 +31,9 @@ To determine the registrable domain with reasonable certainty, take the value in
 
 ### Last Generator Output
 ```
-Fri Aug 24 01:50:04 EDT 2018
-ICANN suffixes found: 7332, unique: 7324
-Private suffixes found: 1281, unique: 1281
+Sat Aug 25 01:50:04 EDT 2018
+ICANN suffixes found: 7339, unique: 7331
+Private suffixes found: 1282, unique: 1282
 Discrepancy: 8
 Obvious punycode errors: 0
 
